@@ -1,11 +1,9 @@
-#괄호의 값 [Silver 2]
+# 괄호의 값 [Silver 2]
 
 import sys
 
 bracket = str(sys.stdin.readline().strip())
-
 bracket = list(bracket)
-
 stack = []
 
 while(len(bracket)>0):
@@ -13,7 +11,6 @@ while(len(bracket)>0):
 
     if(a == '(' or a =='['):
         stack.append(a)
-#    print(stack)
 
     if(a == ')'):
         _sum = 0
