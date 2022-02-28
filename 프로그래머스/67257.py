@@ -10,9 +10,11 @@ numbers = list(map(int, re.split("[+*-]",expression)))
 operater_list = list(re.sub(r'[0-9]+', '', expression))
 max_num = -1*sys.maxsize
 
+print(operater_list)
+print(numbers)
 
 op = list(itertools.permutations(["+","*","-"],3))
-
+print(op)
 for operators in op:
     copy_number = copy.deepcopy(numbers)
     operater_list_copy = copy.deepcopy(operater_list)
@@ -38,3 +40,7 @@ for operators in op:
     max_num = max(max_num,abs(copy_number[0]));
 
 print(max_num)
+
+
+
+
