@@ -1,4 +1,4 @@
-# 프로그래머스[수식 최대화]
+# Programmers[수식 최대화]
 import itertools
 import sys
 import re
