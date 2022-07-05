@@ -1,5 +1,4 @@
 # 문자열 압축
-import copy
 import sys
 
 
